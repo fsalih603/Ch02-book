@@ -22,16 +22,28 @@ public class Book
         title = bookTitle;
     }
 
-    // Exercise 2.83 - Get the author's name 
+    //Return the author
     public String getAuthor ()
     {
         return author;
     }
+    //Return the title 
     public String getTitle()
     {
         return title;
     }
     
+    //Method to display author
+    public void printAuthor()
+    {
+        System.out.println(author);
+    }
+    
+    // Method to display title
+    public void printTitle()
+    {
+        System.out.println(title);
+    }
     
     
     
