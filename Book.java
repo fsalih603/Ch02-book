@@ -51,6 +51,12 @@ public class Book
         System.out.println(title);
     }
     
+    //Method to display all three details at once 
+    public void printDetails()
+    {
+        System.out.println("Title: " + title + ", Author: " + author +
+        ", Pages: " + pages);
+    }
     
     
     
