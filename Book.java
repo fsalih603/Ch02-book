@@ -49,7 +49,14 @@ public class Book
     //Setting the reference number
     public void setRefNumber(String ref)
     {
-        refNumber = ref;
+        if(ref.length() >= 3) 
+        {
+            refNumber = ref;
+        }
+        else 
+        {
+            System.out.println("Error: Reference number too short.");
+        }
     }
     
     //Method to display author
