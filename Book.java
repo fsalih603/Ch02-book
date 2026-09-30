@@ -14,17 +14,20 @@ public class Book
     private int pages;
     private String refNumber;
     private int borrowed;
+    private boolean courseText;
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int numPages)
+    public Book(String bookAuthor, String bookTitle, int numPages,
+    boolean isCourseText)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = numPages;
         refNumber = "";
         borrowed = 0;
+        courseText = isCourseText;
     }
 
     
@@ -49,11 +52,15 @@ public class Book
     {
         return refNumber;
     }
-    
     // Returning the number of times borrowed
     public int getBorrowed()
     {
         return borrowed;
+    }
+    //Return whether the book is used for course text
+    public boolean isCourseText()
+    {
+        return courseText;
     }
     
         
